@@ -2,12 +2,14 @@
 
 COLOR_RED='\e[31m'
 COLOR_GREEN='\e[32m'
+COLOR_YELLOW='\e[33m'
 COLOR_BLUE='\e[34m'
 COLOR_RESET='\e[0m'
 
 echo_color() { echo -e "$1$2$COLOR_RESET"; }
 echo_r() { echo_color "$COLOR_RED" "$1"; }
 echo_g() { echo_color "$COLOR_GREEN" "$1"; }
+echo_y() { echo_color "$COLOR_YELLOW" "$1"; }
 echo_b() { echo_color "$COLOR_BLUE" "$1"; }
 
 chk_cmd() { command -v "$1" &> /dev/null; }
