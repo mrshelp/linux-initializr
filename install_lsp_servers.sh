@@ -5,6 +5,7 @@ declare -A LSP_SERVERS=(
   ['bash-language-server']='bash-language-server'
   ['yaml-language-server']='yaml-language-server'
   ['vscode-json-languageserver']='vscode-json-languageserver'
+  ['typescript-language-server']='typescript-language-server'
 )
 
 chk_lsp_servers() {
